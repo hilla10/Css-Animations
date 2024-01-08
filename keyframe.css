@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.animation {
+    background: #fff;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    animation: animate 5s ease-in-out infinite forwards;
+    position: relative;
+}
+
+
+@keyframes animate {
+    0% {
+        border-radius: 0 0 0 0;
+        background: #fff;
+    }
+
+    25% {
+        border-radius: 50% 0 0 0;
+        background: red
+    }
+
+    50% {
+        border-radius: 50% 50% 0 0;
+        background: green;
+    }
+
+    90% {
+        border-radius: 50% 50% 50% 0;
+        background: blue;
+    }
+}
